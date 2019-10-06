@@ -1,3 +1,3 @@
 # weather_app
-App Android
-Language: Kotlin
+# Android app demo
+# Kotlin
