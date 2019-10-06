@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="current">Currently</string>
+    <string name="hourly">Hourly</string>
+    <string name="daily">Daily</string>
+    <string name="clear_day">Clear day</string>
+    <string name="clear_night">Clear night</string>
+    <string name="rain">Rain</string>
+    <string name="snow">Snow</string>
+    <string name="sleet">Sleet</string>
+    <string name="wind">Wind</string>
+    <string name="fog">Fog</string>
+    <string name="cloudy">Cloudy</string>
+    <string name="partly_cloudy_day">Partly cloudy day</string>
+    <string name="partly_cloudy_night">Partly cloudy night</string>
+    <string name="thunderstorm">Thunderstorm</string>
+    <string name="permission">Permission!</string>
+    <string name="please_add_requites_permission_to_use_app">Please add requites permission to use app!</string>
+    <string name="copyright_mess">This application using api provided by pvduc9773@gmail.com</string>
+    <string name="copyright">Copyright</string>
+    <string name="we_cant_get_your_location_please_choose_it_again">We can\'t get your location, please choose it again!!!</string>
+    <string name="hight">Hight</string>
+    <string name="low">Low</string>
+    <string name="sunrise_time">Sunrise time:</string>
+    <string name="sunset_time">Sunset time:</string>
+    <string name="moon_phase">Moon phase:</string>
+    <string name="temperature_high_time">Temperature high time:</string>
+    <string name="temperature_low_time">Temperature Low Time:</string>
+    <string name="uvindex">UvIndex:</string>
+    <string name="apparent_temperature_high">Apparent temperature high:</string>
+    <string name="apparent_temperature_low">Apparent Temperature Low:</string>
+    <string name="dew_point">Dew Point:</string>
+    <string name="precip_intensity">Precip Intensity:</string>
+    <string name="precip_probability">Precip Probability:</string>
+    <string name="humidity">Humidity:</string>
+    <string name="pressure">Pressure:</string>
+    <string name="wind_speed">Wind speed:</string>
+    <string name="wind_gust">Wind gust:</string>
+    <string name="wind_bearing">Wind bearing:</string>
+    <string name="cloud_cover">Cloud cover:</string>
+    <string name="visibility">Visibility:</string>
+    <string name="ozone">Ozone:</string>
+    <string name="setting">Setting</string>
+    <string name="change_your_location">Change your location</string>
+    <string name="view_weather_animation">View weather animation</string>
+    <string name="temperature">Temperature:</string>
+    <string name="f">F</string>
+    <string name="c">C</string>
+    <string name="copy_right">Copyright</string>
+    <string name="apparent_temp">Apparent Temp:</string>
+    <string name="ngon_ngu">Language</string>
+
+    <string-array name="language_list">
+        <item>English</item>
+        <item>Vietnamese</item>
+    </string-array>
+</resources>

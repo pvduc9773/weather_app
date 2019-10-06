@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stdiohue.phamduc.kotlin_viper">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="com.stdiohue.phamduc.kotlin_viper.ProjectApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_weather"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_weather"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name="com.stdiohue.phamduc.kotlin_viper.module.splash.ui.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.stdiohue.phamduc.kotlin_viper.module.home.ui.activity.HomeActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBN718IrQJsgYbdHFh8xBv4wNZQK3cvSGI" />
+
+        <activity android:name="com.stdiohue.phamduc.kotlin_viper.module.setting.ui.activity.WeatherAnimationActivity" />
+        <activity android:name="com.stdiohue.phamduc.kotlin_viper.module.dailyweather.ui.activity.DailyWeatherDetailActivity"></activity>
+    </application>
+
+</manifest>

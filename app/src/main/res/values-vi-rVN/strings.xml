@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Thời tiết</string>
+    <string name="current">Hiện tại</string>
+    <string name="hourly">Từng giờ</string>
+    <string name="daily">Từng ngày</string>
+    <string name="clear_day">Ngày nắng</string>
+    <string name="clear_night">Đêm đẹp</string>
+    <string name="rain">Mưa</string>
+    <string name="snow">Tuyết</string>
+    <string name="sleet">Mưa đá</string>
+    <string name="wind">Gió</string>
+    <string name="fog">Sương mù</string>
+    <string name="cloudy">Mây</string>
+    <string name="partly_cloudy_day">Ngày nhiều mây</string>
+    <string name="partly_cloudy_night">Đêm nhiều mây</string>
+    <string name="thunderstorm">Sấm sét</string>
+    <string name="permission">Quyền truy cập!</string>
+    <string name="please_add_requites_permission_to_use_app">Vui lòng cấp các quyền yêu cầu để sử dụng ứng dụng!</string>
+    <string name="copyright_mess">Ứng dụng sử dụng các API được cung cấp bởi pvduc9773@gmail.comt</string>
+    <string name="copyright">Bản quyền</string>
+    <string name="we_cant_get_your_location_please_choose_it_again">Chúng tôi không thể tìm thấy vị trí của bạn, vui lòng chọn lại!!!</string>
+    <string name="hight">Cao nhất</string>
+    <string name="low">Thấp nhất</string>
+    <string name="sunrise_time">Mặt trời lặn:</string>
+    <string name="sunset_time">Mặt trời mọc:</string>
+    <string name="moon_phase">Chu kỳ mặt trăng:</string>
+    <string name="temperature_high_time">"Nhiệt độ cao nhất lúc: "</string>
+    <string name="temperature_low_time">"Nhiệt độ thấp nhất lúc: "</string>
+    <string name="uvindex">Chỉ số UV:</string>
+    <string name="apparent_temperature_high">Nhiệt độ cao nhất cảm nhận được:</string>
+    <string name="apparent_temperature_low">Nhiệt độ thấp nhất cảm nhận được:</string>
+    <string name="dew_point">Điểm sương:</string>
+    <string name="precip_intensity">Cường độ kết tủa:</string>
+    <string name="precip_probability">Xác suất kết tủa:</string>
+    <string name="humidity">Độ ẩm:</string>
+    <string name="pressure">Sức ép:</string>
+    <string name="wind_speed">Tốc độ gió:</string>
+    <string name="wind_gust">Cơn gió mạnh:</string>
+    <string name="wind_bearing">Ảnh hưởng gió:</string>
+    <string name="cloud_cover">Mây che phủ:</string>
+    <string name="visibility">Tầm nhìn:</string>
+    <string name="ozone">Ozone:</string>
+    <string name="setting">Cài đặt</string>
+    <string name="change_your_location">Thay đổi vị trí của bạn</string>
+    <string name="view_weather_animation">Xem hình động thời tiết</string>
+    <string name="temperature">Nhiệt độ:</string>
+    <string name="f">F</string>
+    <string name="c">C</string>
+    <string name="copy_right">Bản quyền</string>
+    <string name="apparent_temp">Nhiệt độ cảm nhận được:</string>
+
+    <string-array name="language_list">
+        <item>Tiếng Anh</item>
+        <item>Tiếng Việt</item>
+    </string-array>
+    <string name="ngon_ngu">Ngôn ngữ</string>
+</resources>

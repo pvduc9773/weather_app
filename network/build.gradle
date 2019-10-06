@@ -1,0 +1,63 @@
+apply plugin: 'com.android.library'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "String", "SERVER_URL", '"https://api.darksky.net/forecast/80997ef4b5c54220078c2af77880515f/"'
+        }
+        release {
+            buildConfigField "String", "SERVER_URL", '"https://api.darksky.net/forecast/80997ef4b5c54220078c2af77880515f/"'
+            postprocessing {
+                removeUnusedCode false
+                removeUnusedResources false
+                obfuscate false
+                optimizeCode false
+                proguardFile 'proguard-rules.pro'
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+ext { retrofitVersion = '2.3.0' }
+dependencies {
+    api "com.squareup.retrofit2:retrofit:${retrofitVersion}"
+    api "com.squareup.retrofit2:adapter-rxjava2:${retrofitVersion}"
+    api "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    implementation supportDependencies.appCompat
+    implementation supportDependencies.design
+    implementation supportDependencies.dagger2
+    compileOnly supportDependencies.jsr250
+    kapt supportDependencies.dagger2Compiler
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation supportDependencies.rxKotlin
+    implementation supportDependencies.rxAndroid
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+repositories {
+    mavenCentral()
+}

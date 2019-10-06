@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BottomNavButton">
+        <attr name="textTitle" format="string" />
+        <attr name="imageIcon" format="reference" />
+        <attr name="activeColor" format="color" />
+        <attr name="deActiveColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="WeatherValueView">
+        <attr name="setTitle" format="string" />
+        <attr name="setValue" format="string" />
+    </declare-styleable>
+</resources>

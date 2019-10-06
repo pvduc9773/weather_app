@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".module.dailyweather.ui.activity.DailyWeatherDetailActivity">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorGreenJungle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_back_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="Title"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <VideoView
+        android:id="@+id/ivWeatherImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <LinearLayout
+        android:id="@+id/llWeather"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.8"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivWeatherImage">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivWeatherIcon"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorGray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTemperatureHigh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hight"
+                    android:textColor="@color/colorGreenJungle"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / "
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/tvTemperatureLow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/low"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvSumary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <com.stdiohue.phamduc.kotlin_viper.utils.WeatherValueView
+                    android:id="@+id/wvSunriseTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:setTitle="@string/sunrise_time" />
+
+                <com.stdiohue.phamduc.kotlin_viper.utils.WeatherValueView
+                    android:id="@+id/wvSunsetTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:setTitle="@string/sunset_time" />
+
+                <com.stdiohue.phamduc.kotlin_viper.utils.WeatherValueView
+                    android:id="@+id/wvMoonPhase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:setTitle="@string/moon_phase" />
+
+                <com.stdiohue.phamduc.kotlin_viper.utils.WeatherValueView
+                    android:id="@+id/wvTemperatureHighTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:setTitle="@string/temperature_high_time" />
+
+                <com.stdiohue.phamduc.kotlin_viper.utils.WeatherValueView
+                    android:id="@+id/wvTemperatureLowTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:setTitle="@string/temperature_low_time" />
+
+                <com.stdiohue.phamduc.kotlin_viper.utils.WeatherValueView
+                    android:id="@+id/wvUvIndex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:setTitle="@string/uvindex" />
+
+                <com.stdiohue.phamduc.kotlin_viper.utils.WeatherValueView
+                    android:id="@+id/wvApparentTemperatureHigh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:setTitle="@string/apparent_temperature_high" />
+
+                <com.stdiohue.phamduc.kotlin_viper.utils.WeatherValueView
+                    android:id="@+id/wvApparentTemperatureLow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:setTitle="@string/apparent_temperature_low" />
+
+                <com.stdiohue.phamduc.kotlin_viper.utils.WeatherValueView
+                    android:id="@+id/wvDewPoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:setTitle="@string/dew_point" />
+
+                <com.stdiohue.phamduc.kotlin_viper.utils.WeatherValueView
+                    android:id="@+id/wvPrecipIntensity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:setTitle="@string/precip_intensity" />
+
+                <com.stdiohue.phamduc.kotlin_viper.utils.WeatherValueView
+                    android:id="@+id/wvPrecipProbability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:setTitle="@string/precip_probability" />
+
+                <com.stdiohue.phamduc.kotlin_viper.utils.WeatherValueView
+                    android:id="@+id/wvHumidity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:setTitle="@string/humidity" />
+
+                <com.stdiohue.phamduc.kotlin_viper.utils.WeatherValueView
+                    android:id="@+id/wvPressure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:setTitle="@string/pressure" />
+
+                <com.stdiohue.phamduc.kotlin_viper.utils.WeatherValueView
+                    android:id="@+id/wvWindSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:setTitle="@string/wind_speed" />
+
+                <com.stdiohue.phamduc.kotlin_viper.utils.WeatherValueView
+                    android:id="@+id/wvWindGust"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:setTitle="@string/wind_gust" />
+
+                <com.stdiohue.phamduc.kotlin_viper.utils.WeatherValueView
+                    android:id="@+id/wvWindBearing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:setTitle="@string/wind_bearing" />
+
+                <com.stdiohue.phamduc.kotlin_viper.utils.WeatherValueView
+                    android:id="@+id/wvCloudCover"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:setTitle="@string/cloud_cover" />
+
+                <com.stdiohue.phamduc.kotlin_viper.utils.WeatherValueView
+                    android:id="@+id/wvVisibility"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:setTitle="@string/visibility" />
+
+                <com.stdiohue.phamduc.kotlin_viper.utils.WeatherValueView
+                    android:id="@+id/wvOzone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:setTitle="@string/ozone" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
